@@ -1,0 +1,33 @@
+.header
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+
+.title
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+    position: relative
+    padding: 6px 0 6px 10px
+    margin: 0.5rem 0
+    z-index: 2
+    &::before
+        content: ""
+        position: absolute
+        top: 0px
+        z-index: -1
+        left: 0
+        background-color: $main-color
+        height: 36px
+        width: 36px
+        border-radius: 50%
+
+.subtitle
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+
+.paragraph
+    font-weight: 500
+    font-size: 14px
+    line-height: 21px
