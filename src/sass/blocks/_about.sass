@@ -1,19 +1,26 @@
 .about
+    padding-top: 100px
     &__grcontainer
         display: grid
         grid-template-columns: 400px auto
-        grid-template-rows: 300px min-content
         gap: 40px 70px
+    &__me
+        grid-row-start: 1
+        grid-row-end: 3
+        grid-column-end: 2
+        width: 100%
+        align-self: center
+    &__hobbies
+        display: grid
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+        gap: 20px
+    &__hobby-descr
+        display: grid
+        grid-template-columns: max-content auto
+        gap: 0px 20px
         img
             grid-row-start: 1
             grid-row-end: 3
-            grid-column-end: 2
-            width: 100%
-    &__hobbies
-        display: grid
-        grid-template-columns: 50px 1fr 50px 1fr
-        grid-auto-rows: 100px 100px
-        gap: 20px
             
             
         
