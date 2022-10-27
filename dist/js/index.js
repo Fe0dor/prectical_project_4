@@ -8,4 +8,11 @@ hamburger.addEventListener('click', () => {
 
 closeEl.addEventListener('click', () => {
     menu.classList.remove('active');
-})
+});
+
+const counters = document.querySelectorAll('.skills__num');
+const lines = document.querySelectorAll('.skills__per-top');
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
